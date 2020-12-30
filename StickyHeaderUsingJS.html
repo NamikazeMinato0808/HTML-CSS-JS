@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sticky header using JS</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    #sticker {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    div {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div id="sticker" style="background-color:rgb(107, 178, 202);color:white;">
+        <h2>Hello I'm sticker using JAVASCRIPT</h2>
+    </div>
+    <div style="height:2000px;width:100%;background-color:lightgreen;">
+        <pre style="text-align:center;font-size:1.5em;">
+            Người theo hương hoa mây mù giăng lối
+    Làn sương khói phôi phai đưa bước ai xa rồi
+    Đơn côi mình ta vấn vương
+    Hồi ức, trong men say chiều mưa buồn
+    Ngăn giọt lệ ngừng khiến khoé mi sầu bi
+Đường xưa nơi cố nhân từ giã biệt li
+(Cánh hoa rụng rơi)
+Phận duyên mong manh rẽ lối trong mơ ngày tương phùng
+Oh-h-h-h
+Tiếng khóc cuốn theo làn gió bay
+Thuyền ai qua sông lỡ quên vớt ánh trăng tàn nơi này
+Trống vắng bóng ai dần hao gầy
+Lòng ta xin nguyện khắc ghi trong tim tình nồng mê say
+Mặc cho tóc mây vương lên đôi môi cay
+Bâng khuâng mình ta lạc trôi giữa đời
+Ta lạc trôi giữa trời
+Đôi chân lang thang về nơi đâu?
+Bao yêu thương giờ nơi đâu?
+Câu thơ tình xưa vội phai mờ
+Theo làn sương tan biến trong cõi mơ
+Mưa bụi vương trên làn mi mắt
+Ngày chia lìa hoa rơi buồn hiu hắt
+Tiếng… 
+
+Người theo hương hoa mây mù giăng lối
+Làn sương khói phôi phai đưa bước ai xa rồi
+Đơn côi mình ta vấn vương
+Hồi ức, trong men say chiều mưa buồn
+Ngăn giọt lệ ngừng khiến khoé mi sầu bi
+Đường xưa nơi cố nhân từ giã biệt li
+(Cánh hoa rụng rơi)
+Phận duyên mong manh rẽ lối trong mơ ngày tương phùng
+Oh-h-h-h
+Tiếng khóc cuốn theo làn gió bay
+Thuyền ai qua sông lỡ quên vớt ánh trăng tàn nơi này
+Trống vắng bóng ai dần hao gầy
+Lòng ta xin nguyện khắc ghi trong tim tình nồng mê say
+Mặc cho tóc mây vương lên đôi môi cay
+Bâng khuâng mình ta lạc trôi giữa đời
+Ta lạc trôi giữa trời
+Đôi chân lang thang về nơi đâu?
+Bao yêu thương giờ nơi đâu?
+Câu thơ tình xưa vội phai mờ
+Theo làn sương tan biến trong cõi mơ
+Mưa bụi vương trên làn mi mắt
+Ngày chia lìa hoa rơi buồn hiu hắt
+Tiếng… 
+
+Người theo hương hoa mây mù giăng lối
+Làn sương khói phôi phai đưa bước ai xa rồi
+Đơn côi mình ta vấn vương
+Hồi ức, trong men say chiều mưa buồn
+Ngăn giọt lệ ngừng khiến khoé mi sầu bi
+Đường xưa nơi cố nhân từ giã biệt li
+(Cánh hoa rụng rơi)
+Phận duyên mong manh rẽ lối trong mơ ngày tương phùng
+Oh-h-h-h
+Tiếng khóc cuốn theo làn gió bay
+Thuyền ai qua sông lỡ quên vớt ánh trăng tàn nơi này
+Trống vắng bóng ai dần hao gầy
+Lòng ta xin nguyện khắc ghi trong tim tình nồng mê say
+Mặc cho tóc mây vương lên đôi môi cay
+Bâng khuâng mình ta lạc trôi giữa đời
+Ta lạc trôi giữa trời
+Đôi chân lang thang về nơi đâu?
+Bao yêu thương giờ nơi đâu?
+Câu thơ tình xưa vội phai mờ
+Theo làn sương tan biến trong cõi mơ
+Mưa bụi vương trên làn mi mắt
+Ngày chia lìa hoa rơi buồn hiu hắt
+Tiếng… 
+        </pre>
+    </div>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the header
+        var header = document.getElementById("sticker");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
